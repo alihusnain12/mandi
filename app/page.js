@@ -55,14 +55,14 @@ const SearchPage = () => {
 
   return (
     <div className="p-4">
-      <div className="w-full bg-gray-800 p-4 flex justify-between items-center rounded-md">
+      <div className="w-full bg-gray-800 p-4 flex flex-col md:flex-row justify-between items-center rounded-md">
         {/* Search Field */}
         <input
           type="text"
           value={searchTerm}
           onChange={handleSearchChange}
           placeholder="Search name..."
-          className="border border-gray-300 rounded-md p-2 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+          className="border border-gray-300 rounded-md p-2 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 mb-2 md:mb-0"
         />
         <div className="flex items-center space-x-4">
           {/* Enter Name Field */}
@@ -82,7 +82,7 @@ const SearchPage = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center h-screen bg-gray-100 mt-8">
+      <div className="flex flex-col items-center justify-center bg-gray-100 mt-8">
         <div className="w-full max-w-md">
           <h3 className="text-2xl font-bold mb-4">Names List:</h3>
           <ul className="space-y-2">
